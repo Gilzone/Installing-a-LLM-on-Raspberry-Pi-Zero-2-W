@@ -1,4 +1,4 @@
-# Installing a LLM on Raspberry Pi Zero 2 W With Ollama
+# Installing a LLM on a  10 Dollar Raspberry Pi Zero 2 W With Ollama
 
 This guide walks you through setting up a lightweight Large Language Model (LLM) on a Raspberry Pi Zero 2 W. We’ll use Raspberry Pi OS (Legacy, 64-bit) Lite, optimize the Pi for better performance, and install the Ollama application to run the model.
 
