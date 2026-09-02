@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <rect x="20" y="15" width="760" height="390" rx="12" fill="url(#bg)" stroke="#334155" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Window Header -->
+  <circle cx="48" cy="40" r="6" fill="#ef4444"/>
+  <circle cx="68" cy="40" r="6" fill="#f59e0b"/>
+  <circle cx="88" cy="40" r="6" fill="#10b981"/>
+  <text x="400" y="44" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace" font-size="13" font-weight="600" text-anchor="middle">pi@pizero: ~ (Raspberry Pi Zero 2 W — 512MB RAM)</text>
+  <line x1="20" y1="62" x2="780" y2="62" stroke="#334155" stroke-width="1"/>
+
+  <!-- Terminal Content -->
+  <g font-family="'JetBrains Mono', 'Fira Code', Consolas, monospace" font-size="13" line-height="1.5">
+    <!-- Prompt 1 -->
+    <text x="45" y="95" fill="#10b981" font-weight="bold">pi@pizero</text>
+    <text x="120" y="95" fill="#94a3b8">:</text>
+    <text x="130" y="95" fill="#38bdf8">~ $</text>
+    <text x="165" y="95" fill="#f1f5f9">free -h</text>
+    
+    <text x="45" y="120" fill="#64748b">               total        used        free      shared  buff/cache   available</text>
+    <text x="45" y="140" fill="#cbd5e1">Mem:           <tspan fill="#38bdf8">426Mi</tspan>        <tspan fill="#10b981">54Mi</tspan>       310Mi       1.0Mi        62Mi       <tspan fill="#10b981">372Mi</tspan></text>
+    <text x="45" y="160" fill="#cbd5e1">Swap:          <tspan fill="#f59e0b">1.0Gi</tspan>          <tspan fill="#10b981">0B</tspan>       1.0Gi</text>
+    
+    <!-- Prompt 2 -->
+    <text x="45" y="195" fill="#10b981" font-weight="bold">pi@pizero</text>
+    <text x="120" y="195" fill="#94a3b8">:</text>
+    <text x="130" y="195" fill="#38bdf8">~ $</text>
+    <text x="165" y="195" fill="#f1f5f9">ollama run smollm2:135m-instruct-q4_K_S</text>
+    
+    <text x="45" y="225" fill="#38bdf8">⠋</text>
+    <text x="65" y="225" fill="#94a3b8">Loading model smollm2:135m-instruct-q4_K_S into memory (85.2 MB)...</text>
+    <text x="45" y="248" fill="#10b981">✓</text>
+    <text x="65" y="248" fill="#10b981" font-weight="bold">Model ready on ARM Cortex-A53 quad-core. Type /bye to exit.</text>
+
+    <!-- Interactive Prompt -->
+    <text x="45" y="282" fill="#ec4899" font-weight="bold">&gt;&gt;&gt;</text>
+    <text x="75" y="282" fill="#f1f5f9">Explain quantum computing in one short sentence.</text>
+    
+    <text x="45" y="315" fill="#a5b4fc">Quantum computing uses quantum bits that can exist in multiple states</text>
+    <text x="45" y="335" fill="#a5b4fc">simultaneously to solve complex calculations exponentially faster than classical computers.</text>
+    
+    <!-- Stats -->
+    <text x="45" y="375" fill="#64748b" font-size="11">[ eval: 24 tokens | 4.8 tokens/sec | resident mem: 284MB | temp: 48.2°C ]</text>
+  </g>
+</svg>

@@ -13,6 +13,14 @@ While large AI models normally require high-end GPUs and gigabytes of VRAM, this
 
 ---
 
+## 📸 Live Terminal Demo (Running SmolLM2 on Pi Zero 2 W)
+
+<p align="center">
+  <img src="docs/terminal_demo.svg" width="100%" alt="Pi Zero 2 W LLM Terminal Demo" />
+</p>
+
+---
+
 ## 📊 Memory & Resource Budget (How it Fits in 512MB)
 
 ```text
